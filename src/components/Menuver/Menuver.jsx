@@ -18,6 +18,9 @@ function Menuver() {
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/unitsList">Ед. изм.</a>
+          </li>
         </ul>
       </Col>
     </div>

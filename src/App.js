@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Menuver from './components/Menuver/Menuver';
 import Tablestock from './components/Tablestock/Tablestock';
 import Forms from './components/Forms/Forms';
+import UnitsList from './components/Units/UnitsList';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Routes>
                 <Route path='/stock' element={<Tablestock />} />
                 <Route path='/forms' element={<Forms />} />
+                 <Route path='/unitsList' element={<UnitsList />} />
               </Routes>
           </div>
       </div>
