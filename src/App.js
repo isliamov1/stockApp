@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import {Col, Container, Navbar, Nav, Row} from 'react-bootstrap';
+import {Col, Container, ThemeProvider, Navbar, Nav, Row} from 'react-bootstrap';
 import './App.css'
 import Menuver from './components/Menuver/Menuver';
 import Tablestock from './components/Tablestock/Tablestock';
@@ -11,15 +11,28 @@ function App() {
   return(
     <div>
       <div>
-          <div className='box_wrapper'>
-            <Menuver/>
-              <Routes>
-                <Route path='/stock' element={<Tablestock />} />
-                <Route path='/forms' element={<Forms />} />
-                 <Route path='/unitsList' element={<UnitsList />} />
-              </Routes>
+      <ThemeProvider
+  breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+>
+        <div className='container-fluid d-flex flex-colums flex-md-row p-0' fluid="md">
+          <Row>
+            <Col>
+          <Menuver/>
+          </Col>
+            </Row>
+            <Row>
+            <Col>
+            <Routes>
+              <Route path='/stock' element={<Tablestock />} />
+              <Route path='/forms' element={<Forms />} />
+              <Route path='/unitsList' element={<UnitsList />} />
+            </Routes>
+            </Col>
+            </Row>
           </div>
-      </div>
+          </ThemeProvider>;
+        </div>
+      <div/>
     </div>
   );
 }

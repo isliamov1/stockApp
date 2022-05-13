@@ -1,8 +1,8 @@
-import { Col, Container, Row, Nav, Table } from 'react-bootstrap';
+import { Col, Container, Row, Nav } from 'react-bootstrap';
 
 function Tablestock() {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" width="700" >
     <table className="table table-hover table-responsive table-bordered">
       <thead>
         <tr>
