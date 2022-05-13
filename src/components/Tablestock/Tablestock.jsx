@@ -2,35 +2,42 @@ import { Col, Container, Row, Nav, Table } from 'react-bootstrap';
 
 function Tablestock() {
   return (
-    <Table striped bordered hover variant="dark m-0" className='tab'>
+    <div className="container mt-5">
+    <table className="table table-hover table-responsive table-bordered">
       <thead>
         <tr>
-          <th>#</th>
-          <th>Название</th>
-          <th>Количество</th>
-          <th>Дата</th>
+        <th scope="col">№</th>
+          <th scope="col">Наименование</th>
+          <th scope="col">Серия</th>
+          <th scope="col">Кол - во</th>
+          <th scope="col">Дата</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <th scope="row">1</th>
+          <th>Рис</th>
+          <th>554</th>
+          <th>3</th>
+          <th>14.07.22</th>
         </tr>
         <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          <th scope="row">1</th>
+          <th>Рис</th>
+          <th>554</th>
+          <th>3</th>
+          <th>14.07.22</th>
         </tr>
         <tr>
-          <td>3</td>
-          <td colSpan={2}>Larry the Bird</td>
-          <td>@twitter</td>
+          <th scope="row">1</th>
+          <th>Рис</th>
+          <th>554</th>
+          <th>3</th>
+          <th>14.07.22</th>
         </tr>
       </tbody>
-    </Table>
+    </table>
+  </div>
   );
 }
 
