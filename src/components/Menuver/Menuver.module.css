@@ -23,10 +23,15 @@
   border-top: 1px solid #BDC3C7;
 }
 
+.menu > ul > li{
+  border-right: 5px solid #c8f10f;
+}
+
 .menu ul ul{
   transition: all 0.3s;
   opacity: 0;
   position: absolute;
+  border-left: 5px solid #c8f10f;
   visibility: hidden;
   left: 99%;
   top: -2%;
@@ -41,3 +46,4 @@
   color: #fff;
   text-decoration: none;
 }
+
